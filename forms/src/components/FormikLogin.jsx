@@ -17,21 +17,30 @@ export default function Login() {
       }}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
+          // alert(JSON.stringify(values, null, 2));
+          console.log(values);
           setSubmitting(false);
-        }, 400);
+        }, 100);
       }}
     >
       {({ isSubmitting }) => (
         <Form>
           <h2>Login</h2>
-          <Field type="email" name="email" className="control" />
-          <ErrorMessage name="email" component="div" />
-          <Field type="password" name="password" className="control" />
-          <ErrorMessage name="password" component="div" />
-          <button type="submit" disabled={isSubmitting}>
-            Submit
-          </button>
+          <div className="control">
+            <label>Email</label>
+            <Field type="email" name="email" />
+            <ErrorMessage name="email" component="div" />
+          </div>
+          <div className="control">
+            <label>Password</label>
+            <Field type="password" name="password" />
+            <ErrorMessage name="password" component="div" />
+          </div>
+          <p>
+            <button type="submit" disabled={isSubmitting}>
+              Submit
+            </button>
+          </p>
         </Form>
       )}
     </Formik>
