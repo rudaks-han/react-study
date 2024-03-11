@@ -1,3 +1,18 @@
 #root {
     margin: 0 auto;
 }
+
+form {
+    width: 90%;
+    max-width: 40rem;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.control label {
+    display: block;
+    font-size: 0.8rem;
+    margin: 5px 0;
+    font-weight: bold;
+}

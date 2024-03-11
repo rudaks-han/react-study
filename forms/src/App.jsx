@@ -1,7 +1,8 @@
 import "./App.css";
 // import Login from "./components/StateLogin.jsx";
-import Login from "./components/FormDataLogin.jsx";
-import "semantic-ui-css/semantic.min.css";
+// import Login from "./components/FormDataLogin.jsx";
+// import Login from "./components/ReactHookFormLogin.jsx";
+import Login from "./components/FormikLogin.jsx";
 
 function App() {
   return (

@@ -1,63 +1,50 @@
-import React, { useRef, useState } from "react";
-import {
-  Button,
-  Checkbox,
-  Form,
-  FormField,
-  FormGroup,
-  Radio,
-  Select,
-} from "semantic-ui-react";
-
 export default function Login() {
   function handleSubmit(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
     // const email = formData.get("email");
+    const genderData = formData.getAll("gender");
+    const termsData = formData.getAll("terms");
     const data = Object.fromEntries(formData.entries());
+    data.gender = genderData;
+    data.terms = termsData;
     console.log(data);
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <h2>Signup</h2>
-      <FormField>
+      <div className="control">
         <label>Email</label>
         <input type="email" name="email" />
-      </FormField>
-      <FormField>
+      </div>
+      <div className="control">
         <label>Password</label>
         <input type="password" name="password" />
-      </FormField>
-      <FormField>
-        <label>Password</label>
-        <input type="password" name="password2" />
-      </FormField>
-      <FormField
-        type="input"
-        control={Select}
-        label="Gender"
-        name="gender"
-        options={[
-          { key: "m", text: "Male", value: "male" },
-          { key: "f", text: "Female", value: "female" },
-          { key: "o", text: "Other", value: "other" },
-        ]}
-        placeholder="Gender"
-      />
-      <FormGroup inline>
+      </div>
+      <div className="control">
+        <label>Gender</label>
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="femail">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div className="control">
         <label>Quantity</label>
-        <FormField control={Radio} name="quantity" label="One" value="1" />
-        <FormField control={Radio} name="quantity" label="Two" value="2" />
-        <FormField control={Radio} name="quantity" label="Three" value="3" />
-      </FormGroup>
-      <FormField
-        control={Checkbox}
-        name="terms"
-        label={{ children: "I agree to the Terms and Conditions" }}
-      />
-      <Button type="submit">Submit</Button>
-    </Form>
+        <input type="radio" name="quantity" value="1" /> 1
+        <input type="radio" name="quantity" value="2" /> 2
+        <input type="radio" name="quantity" value="3" /> 3
+      </div>
+      <div className="control" name="terms">
+        <label>Terms</label>
+        <input type="checkbox" name="terms" value="Y" />
+        <span>I agree to the Terms and Conditions</span>
+      </div>
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+    </form>
   );
 }

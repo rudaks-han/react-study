@@ -12,17 +12,19 @@ export default function Login() {
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <h2>Login</h2>
-      <FormField>
+      <div className="control">
         <label>Email</label>
         <input type="email" ref={emailRef} />
-      </FormField>
-      <FormField>
+      </div>
+      <div className="control">
         <label>Password</label>
         <input type="password" ref={passwordRef} />
-      </FormField>
-      <Button type="submit">Submit</Button>
-    </Form>
+      </div>
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+    </form>
   );
 }
