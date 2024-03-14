@@ -1,7 +1,8 @@
 import "./App.css";
+import Login from "./components/SimpleLogin.jsx";
 // import Login from "./components/StateLogin.jsx";
 // import Login from "./components/FormDataLogin.jsx";
-import Login from "./components/CustomHookLogin.jsx";
+// import Login from "./components/CustomHookLogin.jsx";
 // import Login from "./components/ReactHookFormLogin.jsx";
 // import Login from "./components/FormikLogin.jsx";
 
