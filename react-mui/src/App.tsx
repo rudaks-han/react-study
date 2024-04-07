@@ -8,6 +8,12 @@ import { MuiCheckbox } from "./components/MuiCheckbox.tsx";
 import { MuiSwitch } from "./components/MuiSwitch.tsx";
 import { MuiRating } from "./components/MuiRating.tsx";
 import { MuiAutocomplete } from "./components/MuiAutocomplete.tsx";
+import { MuiLayout } from "./components/MuiLayout.tsx";
+import { MuiStack } from "./components/MuiStack.tsx";
+import { MuiCard } from "./components/MuiCard.tsx";
+import { MuiAccodion } from "./components/MuiAccodion.tsx";
+import { MuiImageList } from "./components/MuiImageList.tsx";
+import { MuiNavbar } from "./components/MuiNavbar.tsx";
 
 function App() {
   return (
@@ -20,7 +26,13 @@ function App() {
       {/*<MuiCheckbox />*/}
       {/*<MuiSwitch />*/}
       {/*<MuiRating />*/}
-      <MuiAutocomplete />
+      {/*<MuiAutocomplete />*/}
+      {/*<MuiLayout />*/}
+      {/*<MuiStack />*/}
+      {/*<MuiCard />*/}
+      {/*<MuiAccodion />*/}
+      {/*<MuiImageList />*/}
+      <MuiNavbar />
     </div>
   );
 }

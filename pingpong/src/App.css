@@ -47,9 +47,11 @@ body {
 }
 
 .leftbox {
-  /*background: aqua;*/
+  background: #4994EC;
   border: 1px solid red;
+  color: #fff;
 }
 .rightbox {
-  background: red;
+  background: #E15140;
+  color: #fff;
 }
