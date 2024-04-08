@@ -20,6 +20,9 @@ import { MuiDrawer } from "./components/MuiDrawer.tsx";
 import { MuiSpeedDial } from "./components/MuiSpeedDial.tsx";
 import { MuiBottomNavigation } from "./components/MuiBottomNavigation.tsx";
 import { MuiAvatar } from "./components/MuiAvatar.tsx";
+import { MuiBadge } from "./components/MuiBadge.tsx";
+import { MuiList } from "./components/MuiList.tsx";
+import { MuiChip } from "./components/MuiChip.tsx";
 
 function App() {
   return (
@@ -44,7 +47,10 @@ function App() {
       {/*<MuiDrawer />*/}
       {/*<MuiSpeedDial />*/}
       {/*<MuiBottomNavigation />*/}
-      <MuiAvatar />
+      {/*<MuiAvatar />*/}
+      {/*<MuiBadge />*/}
+      {/*<MuiList />*/}
+      <MuiChip />
     </div>
   );
 }
