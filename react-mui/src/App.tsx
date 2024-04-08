@@ -14,6 +14,12 @@ import { MuiCard } from "./components/MuiCard.tsx";
 import { MuiAccodion } from "./components/MuiAccodion.tsx";
 import { MuiImageList } from "./components/MuiImageList.tsx";
 import { MuiNavbar } from "./components/MuiNavbar.tsx";
+import { MuiLink } from "./components/MuiLink.tsx";
+import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs.tsx";
+import { MuiDrawer } from "./components/MuiDrawer.tsx";
+import { MuiSpeedDial } from "./components/MuiSpeedDial.tsx";
+import { MuiBottomNavigation } from "./components/MuiBottomNavigation.tsx";
+import { MuiAvatar } from "./components/MuiAvatar.tsx";
 
 function App() {
   return (
@@ -32,7 +38,13 @@ function App() {
       {/*<MuiCard />*/}
       {/*<MuiAccodion />*/}
       {/*<MuiImageList />*/}
-      <MuiNavbar />
+      {/*<MuiNavbar />*/}
+      {/*<MuiLink />*/}
+      {/*<MuiBreadcrumbs />*/}
+      {/*<MuiDrawer />*/}
+      {/*<MuiSpeedDial />*/}
+      {/*<MuiBottomNavigation />*/}
+      <MuiAvatar />
     </div>
   );
 }
