@@ -1,4 +1,6 @@
 import "./App.css";
+import { LocalizationProvider } from "@mui/lab";
+import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import { MuiTypography } from "./components/MuiTypography.tsx";
 import { MuiButton } from "./components/MuiButton.tsx";
 import { MuiTextField } from "./components/MuiTextField.tsx";
@@ -26,6 +28,13 @@ import { MuiChip } from "./components/MuiChip.tsx";
 import { MuiTooltip } from "./components/MuiTooltip.tsx";
 import { MuiTable } from "./components/MuiTable.tsx";
 import { MuiAlert } from "./components/MuiAlert.tsx";
+import { MuiSnackbar } from "./components/MuiSnackbar.tsx";
+import { MuiDialog } from "./components/MuiDialog.tsx";
+import { MuiProgress } from "./components/MuiProgress.tsx";
+import { MuiSkeleton } from "./components/MuiSkeleton.tsx";
+import { MuiLoadingButton } from "./components/MuiLoadingButton.tsx";
+import { MuiPicker } from "./components/MuiPicker.tsx";
+import { MuiTabs } from "./components/MuiTabs.tsx";
 
 function App() {
   return (
@@ -56,7 +65,14 @@ function App() {
       {/*<MuiChip />*/}
       {/*<MuiTooltip />*/}
       {/*<MuiTable />*/}
-      <MuiAlert />
+      {/*<MuiAlert />*/}
+      {/*<MuiSnackbar />*/}
+      {/*<MuiDialog />*/}
+      {/*<MuiProgress />*/}
+      {/*<MuiSkeleton />*/}
+      {/*<MuiLoadingButton />*/}
+      {/*<MuiPicker />*/}
+      <MuiTabs />
     </div>
   );
 }
