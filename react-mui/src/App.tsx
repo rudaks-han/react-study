@@ -3,7 +3,7 @@ import { createTheme, colors, ThemeProvider } from "@mui/material";
 import { LocalizationProvider } from "@mui/lab";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import { MuiTypography } from "./components/MuiTypography.tsx";
-import { MuiButton } from "./components/MuiButton.tsx";
+// import { MuiButton } from "./components/MuiButton.tsx";
 import { MuiTextField } from "./components/MuiTextField.tsx";
 import { MuiSelect } from "./components/MuiSelect.tsx";
 import { MuiRadio } from "./components/MuiRadio.tsx";
@@ -39,6 +39,7 @@ import { MuiTabs } from "./components/MuiTabs.tsx";
 import { MuiTimeline } from "./components/MuiTimeline.tsx";
 import { MuiMasonry } from "./components/MuiMasonry.tsx";
 import { MuiResponsiveness } from "./components/MuiResponsiveness.tsx";
+import { MuiTest } from "./components/MuiTest.tsx";
 
 function App() {
   return (
@@ -80,7 +81,8 @@ function App() {
         {/*<MuiTabs />*/}
         {/*<MuiTimeline />*/}
         {/*<MuiMasonry />*/}
-        <MuiResponsiveness />
+        {/*<MuiResponsiveness />*/}
+        <MuiTest />
       </div>
     </ThemeProvider>
   );
