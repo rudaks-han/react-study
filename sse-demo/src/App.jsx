@@ -5,7 +5,8 @@ function App() {
   const [messages, setMessages] = useState([]);
 
   const onClick = () => {
-    const eventSource = new EventSource("http://localhost:8080/sse");
+    // const eventSource = new EventSource("http://localhost:8080/sse");
+    const eventSource = new EventSource("http://localhost:8080/sseClient");
 
     eventSource.addEventListener("message", (event) => {
       setMessages((prevMessages) => [...prevMessages, event.data]);
